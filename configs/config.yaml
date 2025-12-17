@@ -1,0 +1,19 @@
+train:
+  device: cuda            # or "cpu"
+  batch_size: 2
+  learning_rate: 0.001
+  epochs: 100
+  log_interval: 50
+  save_interval: 500
+
+data:
+  index_file: data/processed/index.json
+
+model:
+  residual_layers: 30
+  residual_channels: 64
+  dilation_cycle: 10
+
+audio:
+  sample_rate: 22050
+  n_mels: 80
